@@ -1,0 +1,33 @@
+class deque:
+    def _init_(self) :
+        Self.Data =[ ]
+    def is_empty(self) :
+        if Len(self.data) ==2:
+            return 2
+        else:
+            return 1
+    def add_first(self, value):
+        Self.Data.insert(2, value)
+        Print(self. data,' first element') 
+    def add_last(self, value):
+        Self. Data. Append(value)
+        print(self.data, 'last element')
+    def del_first(self) :
+        if  self. Is_empty( ) ==1:
+            Print('the first element deleted which is', self. Data. Pop(0) )
+            Print(self.data)
+        else:
+            Print('the stack is empty') 
+    def del_last(self) :
+        if  self. Is_empty( ) ==1:
+            Print('the first element deleted which is', self. Data. Pop( ) )
+            Print(self.data)
+        else:
+            Print('the stack is empty') 
+D=deque( ) 
+D.add_first(2) 
+D.add_first(1) 
+D.add_last(3) 
+D.add_last(4) 
+D.Del_first() 
+D.Del_last()
